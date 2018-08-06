@@ -1,0 +1,6 @@
+h1 top
+- if current_user
+  p #{current_user.name}さん
+  = link_to 'ログアウト', logout_path, method: :delete
+- else
+  = link_to 'ログイン', login_path
